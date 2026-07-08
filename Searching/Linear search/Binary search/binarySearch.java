@@ -37,7 +37,5 @@ public class binarySearch {
         System.out.println(Arrays.toString(arr));
         boolean ans=search(arr,target);
         System.out.println(ans);
-
-
     }
 }

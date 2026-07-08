@@ -24,7 +24,7 @@ public class fstLstPos {
             else {
                 ans=mid;
                 if(findstart){
-                    end=mid-1;
+                    end=mid-1;  
                 }else start=mid+1;
             }
         }
