@@ -2,12 +2,15 @@ import java.util.Arrays;
 public class bubble {
     public static void main(String[] args) {
         int[] arr={1,5,3,9,6,3,2,0,10};
+        int count=0;
         sort(arr);
         System.out.println(Arrays.toString(arr));
+        System.out.println(count);
     }
     static void sort(int[] arr){
         boolean swapped;
         int l=arr.length;
+        int count=0;
         for (int i = 0; i < l; i++) {
             swapped=false;
             for (int j = 0; j < l-i-1; j++) {
@@ -16,13 +19,15 @@ public class bubble {
                     arr[j+1]=arr[j];
                     arr[j]=temp;
                     swapped=true;
-
+                }
+                if (swapped) {
+                    count++;
                 }
             }  
             if (!swapped) {
             break;
         }
         }
-        
+        System.out.println(count);
     }
 }
