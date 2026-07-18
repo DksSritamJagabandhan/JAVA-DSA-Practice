@@ -7,7 +7,7 @@ public class cyclic {
         System.out.println(Arrays.toString(arr));
     }
     static void sorting(int[] arr){
-        int i=0;
+        int i=0; 
         while (i<arr.length) {
             int correct=arr[i]-1;
             if (arr[i]!=arr[correct]) {

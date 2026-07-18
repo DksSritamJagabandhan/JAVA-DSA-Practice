@@ -5,7 +5,6 @@ public class bubble {
         int count=0;
         sort(arr);
         System.out.println(Arrays.toString(arr));
-        System.out.println(count);
     }
     static void sort(int[] arr){
         boolean swapped;
